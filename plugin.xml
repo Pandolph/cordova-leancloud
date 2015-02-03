@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.alin.cordova.leancloud"
+    version="0.0.1">
+    <name>leancloud</name>
+    <description>leancloud</description>
+    <license>MIT</license>
+    <keywords>ionic feedback</keywords>
+    <js-module src="www/Leancloud.js" name="Leancloud">
+        <clobbers target="leancloud" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Leancloud">
+                <param name="ios-package" value="Leancloud"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/Leancloud.swift" />
+        <framework src="lib/AVOSCloud.framework" custom="true" />
+    </platform>
+  <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Leancloud">
+                <param name="android-package" value="org.alin.leancloud.Leancloud" />
+            </feature>
+        </config-file>
+        <source-file src="lib/fastjson.jar" target-dir="libs"/>
+        <source-file src="lib/httpmime-4.2.4.jar" target-dir="libs"/>
+        <source-file src="lib/android-async-http-1.4.6.jar" target-dir="libs"/>
+        <source-file src="lib/avoscloud-sdk-v2.6.10.4.jar" target-dir="libs"/>
+        <source-file src="lib/Java-WebSocket-1.2.0-leancloud.jar" target-dir="libs"/>
+        <source-file src="lib/avoscloud-statistics-v2.6.10.4.jar" target-dir="libs"/>
+        <source-file src="lib/avoscloud-push-v2.6.10.4.jar" target-dir="libs"/>
+        <source-file src="lib/avoscloud-feedback-v2.6.10.4.jar" target-dir="libs"/>
+        <source-file src="src/android/Leancloud.java" target-dir="src/org/alin/leancloud" />
+    </platform>
+
+</plugin>
