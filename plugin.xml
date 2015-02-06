@@ -37,7 +37,33 @@
         <source-file src="lib/avoscloud-statistics-v2.6.10.4.jar" target-dir="libs"/>
         <source-file src="lib/avoscloud-push-v2.6.10.4.jar" target-dir="libs"/>
         <source-file src="lib/avoscloud-feedback-v2.6.10.4.jar" target-dir="libs"/>
+
+        <source-file src="res/drawable/avoscloud_feedback_actionbar_background.xml" target-dir="res/drawable/avoscloud_feedback_actionbar_background.xml"/>
+        <source-file src="res/drawable/avoscloud_feedback_thread_actionbar_back.png" target-dir="res/drawable/avoscloud_feedback_thread_actionbar_back.png"/>
+        <source-file src="res/drawable-mdpi/avoscloud_feedback_dev_reply_background.9.png" target-dir="res/drawable-mdpi/avoscloud_feedback_dev_reply_background.9.png"/>
+        <source-file src="res/drawable-mdpi/avoscloud_feedback_notification.9.png" target-dir="res/drawable-mdpi/avoscloud_feedback_notification.9.png"/>
+        <source-file src="res/drawable-mdpi/avoscloud_feedback_thread_actionbar_back.png" target-dir="res/drawable-mdpi/avoscloud_feedback_thread_actionbar_back.png"/>
+        <source-file src="res/drawable-mdpi/avoscloud_feedback_user_reply_background.9.png" target-dir="res/drawable-mdpi/avoscloud_feedback_user_reply_background.9.png"/>
+        <source-file src="res/layout/avoscloud_feedback_activity_conversation.xml" target-dir="res/layout/avoscloud_feedback_activity_conversation.xml"/>
+        <source-file src="res/layout/avoscloud_feedback_dev_reply.xml" target-dir="res/layout/avoscloud_feedback_dev_reply.xml"/>
+        <source-file src="res/layout/avoscloud_feedback_thread_actionbar.xml" target-dir="res/layout/avoscloud_feedback_thread_actionbar.xml"/>
+        <source-file src="res/layout/avoscloud_feedback_user_reply.xml" target-dir="res/layout/avoscloud_feedback_user_reply.xml"/>
+        <source-file src="res/values-zh/avoscloud_feedback_string.xml" target-dir="res/values-zh/avoscloud_feedback_string.xml"/>
+        <source-file src="res/drawable-hdpi/avoscloud_feedback_dev_reply_background.9.png" target-dir="res/drawable-hdpi/avoscloud_feedback_dev_reply_background.9.png"/>
+        <source-file src="res/drawable-hdpi/avoscloud_feedback_notification.9.png" target-dir="res/drawable-hdpi/avoscloud_feedback_notification.9.png"/>
+        <source-file src="res/drawable-hdpi/avoscloud_feedback_thread_actionbar_back.png" target-dir="res/drawable-hdpi/avoscloud_feedback_thread_actionbar_back.png"/>
+        <source-file src="res/drawable-hdpi/avoscloud_feedback_user_reply_background.9.png" target-dir="res/drawable-hdpi/avoscloud_feedback_user_reply_background.9.png"/>
+        <source-file src="res/drawable-xhdpi/avoscloud_feedback_dev_reply_background.9.png" target-dir="res/drawable-xhdpi/avoscloud_feedback_dev_reply_background.9.png"/>
+        <source-file src="res/drawable-xhdpi/avoscloud_feedback_notification.9.png" target-dir="res/drawable-xhdpi/avoscloud_feedback_notification.9.png"/>
+        <source-file src="res/drawable-xhdpi/avoscloud_feedback_thread_actionbar_back.png" target-dir="res/drawable-xhdpi/avoscloud_feedback_thread_actionbar_back.png"/>
+        <source-file src="res/drawable-xhdpi/avoscloud_feedback_user_reply_background.9.png" target-dir="res/drawable-xhdpi/avoscloud_feedback_user_reply_background.9.png"/>
+        <source-file src="res/values/avoscloud_feedback_color.xml" target-dir="res/values/avoscloud_feedback_color.xml"/>
+        <source-file src="res/values/avoscloud_feedback_string.xml" target-dir="res/values/avoscloud_feedback_string.xml"/>
+
+
         <source-file src="src/android/Leancloud.java" target-dir="src/org/alin/leancloud" />
+
+
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
